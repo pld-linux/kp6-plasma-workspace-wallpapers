@@ -1,18 +1,18 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeplasmaver	6.3.5
+%define		kdeplasmaver	6.4.0
 %define		qtver		5.15.2
 %define		kpname		plasma-workspace-wallpapers
 
 Summary:	KDE Plasma Workspace Wallpapers
 Name:		kp6-%{kpname}
-Version:	6.3.5
+Version:	6.4.0
 Release:	1
 License:	LGPL v2.1+
 Group:		X11
 Source0:	https://download.kde.org/stable/plasma/%{kdeplasmaver}/%{kpname}-%{version}.tar.xz
-# Source0-md5:	3fad6430e6ed6a428ac713b883725982
+# Source0-md5:	c6d6b973617401984609575a19fe637e
 URL:		http://www.kde.org/
 BuildRequires:	cmake >= 3.16.0
 BuildRequires:	ninja
@@ -82,3 +82,4 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/wallpapers/Mountain
 %{_datadir}/wallpapers/ScarletTree
 %{_datadir}/wallpapers/Nexus
+%{_datadir}/wallpapers/Nuvole
