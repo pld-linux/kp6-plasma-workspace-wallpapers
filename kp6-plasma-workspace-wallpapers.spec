@@ -25,6 +25,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 KDE Plasma Workspace Wallpapers.
 
+%description -l pl.UTF-8
+Tapety dla obszarów roboczych Plazmy.
+
 %prep
 %setup -q -n %{kpname}-%{version}
 
